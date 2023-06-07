@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sant-serf;
+    font-weight: 100;
+}
+
+.wrapper{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.cartbtn{
+    width: 100%;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.2);
+    padding: 10px;
+    text-align: center;
+}
+
+.cartbtn button{
+    border: none;
+    cursor: pointer;
+}
+
+.sidecart{
+    position: absolute;
+    top: 0;
+    right: -550px;
+    width: 25%;
+    height: 100vh;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.2);
+    transition: right .5s;
+}
+
+.sidecart.active{
+    right: 0;
+}
+
+.sidecart span{
+position: absolute;
+top: 20px;
+right: 340px;
+color: #ffffff;
+font-size: 22px;
+cursor: pointer;
+}
+
+.sidecart h2{
+    background: #222;
+    color: #fff;
+    width:100%;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.sidecart .products{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.products img{
+   width: 38%;
+   margin: 0 10px;
+   object-fit: cover;
+}
+
+.products .details{
+    width: 50%;
+    padding: 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.details h3{
+    font-size: 20px;
+}
+
+.details input{
+    width: 40px;
+    height: 30px;
+    border: none;
+    font-size: 18px;
+    border-bottom: 1px solid #555;
+    outline: none;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.details button{
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.details button img{
+    width: 30px;
+    
+}
+
+#checkout{
+    height: 65px;
+    padding: 0 20px;
+    font-size: 22px;
+    border: none;
+    background: #222;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    margin: 30px 0;
+}
